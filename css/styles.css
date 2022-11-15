@@ -1,0 +1,234 @@
+:root {
+  --main-light-color: #ffffff;
+  --main-dark-color: #000000;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --thirdy-text-color: rgba(255, 255, 255, 0.6);
+  --shadow-btn-color: #188ce8;
+}
+
+/* Глобальні стилі */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-light-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Стилі шапки */
+/* Логотип */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo-main {
+  color: var(--main-dark-color);
+}
+
+/* Навігація і контакти*/
+
+.site-nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav-link.current,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Контакти */
+
+.contacts-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Стилі головної сторінки */
+/* Вітання і замовлення */
+
+.hero {
+  background-color: var(--primary-bg-color);
+}
+
+.hero-title {
+  color: var(--main-light-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-main {
+  color: var(--main-light-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: var(--shadow-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Наші переваги */
+
+.benefits-subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits-text {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чим ми займаємося */
+
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Наша кломанда */
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+}
+
+.team-prof {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+}
+
+/* Підвал */
+
+.logo-foot {
+  color: var(--main-light-color);
+}
+
+.foot {
+  background-color: var(--primary-bg-color);
+}
+
+.location-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.location-address:hover,
+.location-address:focus,
+.location-link:hover,
+.location-link:focus {
+  color: var(--accent-color);
+}
+
+.location-link {
+  color: var(--thirdy-text-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Портфоліо */
+
+.button {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  border: none;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: var(--main-light-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.kind-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.kind-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
