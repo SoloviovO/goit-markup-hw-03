@@ -11,150 +11,181 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header>
-      <a class="logo link" href="./index.html" lang="en"
-        >Web<span class="logo-main">Studio</span>
-      </a>
-      <nav>
-        <ul class="list site-nav">
-          <li><a class="link site-nav-link" href="./index.html">Студія</a></li>
-          <li><a class="link site-nav-link current" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link site-nav-link" href="#">Контакти</a></li>
+      <div class="container">
+        <a class="logo link" href="./index.html" lang="en"
+          >Web<span class="logo-main">Studio</span>
+        </a>
+        <nav>
+          <ul class="list site-nav">
+            <li><a class="link site-nav-link" href="./index.html">Студія</a></li>
+            <li><a class="link site-nav-link current" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link site-nav-link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list contacts">
+          <li>
+            <a class="contacts-link link" href="mailto:info@devstudio.com" lang="en"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list contacts">
-        <li>
-          <a class="contacts-link link" href="mailto:info@devstudio.com" lang="en"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- Унікальний вміст -->
     <main>
       <!-- Портфоліо -->
-      <section>
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <ul class="list">
-          <li><button class="button" type="button">Усі</button></li>
-          <li><button class="button" type="button">Веб-сайти</button></li>
-          <li><button class="button" type="button">Додатки</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
-        </ul>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/post1.jpg"
-              alt="Ноутбук з відкритим веб-сайтом"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Технокряк</h2>
-            <p class="kind-text">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/post2.jpg"
-              alt="Два баскетболісти в боротьбі за м'яч"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-            <p class="kind-text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/post3.jpg"
-              alt="Логотип ресторану. На передньому плані текст, а на задньому риба"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Ресторан <span lang="en">Seafood</span></h2>
-            <p class="kind-text">Додаток</p>
-          </li>
-          <li>
-            <img
-              src="./images/post4.jpg"
-              alt="Чорні безпровідні навушники"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Проєкт <span lang="en">Prime</span></h2>
-            <p class="kind-text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/post5.jpg"
-              alt="Дві закриті коробки з надписами. Менша жовта і більша біла"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Проєкт <span lang="en">Boxes</span></h2>
-            <p class="kind-text">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/post6.jpg" alt="Веб-сайт на моніторі" width="370" height="294" />
-            <h2 class="kind-title" lang="en">Inspiration has no Borders</h2>
-            <p class="kind-text">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/post7.jpg" alt="Розгорнутий журнал" width="370" height="294" />
-            <h2 class="kind-title">Видання <span lang="en">Limited Edition</span></h2>
-            <p class="kind-text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/post8.jpg"
-              alt="Бирка з назвою на мотузці"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title">Проєкт <span lang="en">LAB</span></h2>
-            <p class="kind-text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/post9.jpg"
-              alt="Додаток відкритий в ноутбуці з руками на клавіатурі"
-              width="370"
-              height="294"
-            />
-            <h2 class="kind-title" lang="en">Growing Business</h2>
-            <p class="kind-text">Додаток</p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="list">
+            <li><button class="button button-first" type="button">Усі</button></li>
+            <li><button class="button" type="button">Веб-сайти</button></li>
+            <li><button class="button" type="button">Додатки</button></li>
+            <li><button class="button" type="button">Дизайн</button></li>
+            <li><button class="button" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="list">
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post1.jpg"
+                alt="Ноутбук з відкритим веб-сайтом"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Технокряк</h2>
+              <p class="kind-text">Веб-сайт</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post2.jpg"
+                alt="Два баскетболісти в боротьбі за м'яч"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+              <p class="kind-text">Дизайн</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post3.jpg"
+                alt="Логотип ресторану. На передньому плані текст, а на задньому риба"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="kind-text">Додаток</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post4.jpg"
+                alt="Чорні безпровідні навушники"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Проєкт <span lang="en">Prime</span></h2>
+              <p class="kind-text">Маркетинг</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post5.jpg"
+                alt="Дві закриті коробки з надписами. Менша жовта і більша біла"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Проєкт <span lang="en">Boxes</span></h2>
+              <p class="kind-text">Додаток</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post6.jpg"
+                alt="Веб-сайт на моніторі"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title" lang="en">Inspiration has no Borders</h2>
+              <p class="kind-text">Веб-сайт</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post7.jpg"
+                alt="Розгорнутий журнал"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Видання <span lang="en">Limited Edition</span></h2>
+              <p class="kind-text">Дизайн</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post8.jpg"
+                alt="Бирка з назвою на мотузці"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title">Проєкт <span lang="en">LAB</span></h2>
+              <p class="kind-text">Маркетинг</p>
+            </li>
+            <li>
+              <img
+                class="kind-photo"
+                src="./images/post9.jpg"
+                alt="Додаток відкритий в ноутбуці з руками на клавіатурі"
+                width="370"
+                height="294"
+              />
+              <h2 class="kind-title" lang="en">Growing Business</h2>
+              <p class="kind-text">Додаток</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Підвал -->
     <footer class="foot">
-      <a class="logo link" href="./index.html" lang="en"
-        >Web<span class="logo-foot">Studio</span></a
-      >
-      <address class="location">
-        <ul class="list">
-          <li>
-            <a
-              class="location-address link"
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="location-link link" href="mailto:info@devstudio.com" lang="en"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li><a class="location-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo link foot-logo" href="./index.html" lang="en"
+          >Web<span class="logo-foot">Studio</span></a
+        >
+        <address class="location">
+          <ul class="list">
+            <li class="location-item">
+              <a
+                class="location-address link"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="location-item">
+              <a class="location-link link" href="mailto:info@devstudio.com" lang="en"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="location-item">
+              <a class="location-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
