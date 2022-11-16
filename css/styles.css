@@ -9,9 +9,10 @@
   --thirdy-text-color: rgba(255, 255, 255, 0.6);
   --shadow-btn-color: #188ce8;
   --line-color: #ececec;
+  --main-border-color: #eeeeee;
 }
 
-/* Глобальні стилі */
+/* ==================== Глобальні стилі ====================*/
 
 body {
   color: var(--primary-text-color);
@@ -33,8 +34,9 @@ h2,
 h3,
 p,
 ul {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -44,7 +46,6 @@ ul {
   padding-right: 15px;
 
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 .section {
@@ -67,33 +68,69 @@ ul {
   margin: -1px;
 }
 
-/* Стилі шапки */
+/* ==================== Глобальні стилі ====================*/
+
+/* ==================== Стилі шапки ====================*/
 
 header {
   border-bottom: 1px solid var(--line-color);
 }
 
-/* Логотип */
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ==================== Логотип ====================*/
 
 .logo {
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
 
 .logo-main {
-  color: var(--main-dark-color);
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
-/* Навігація і контакти*/
+.logo-head {
+  color: var(--main-dark-color);
+}
+/* ==================== Логотип ====================*/
+/* ==================== Навігація і контакти ====================*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .site-nav-item + .site-nav-item {
+  margin-left: 50px;
+} */
 
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 
@@ -105,30 +142,52 @@ header {
   color: var(--accent-color);
 }
 
-/* Контакти */
+/* ==================== Навігація і контакти ====================*/
+/* ==================== Контакти ==================== */
 
-.contacts-link {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
-/* Стилі головної сторінки */
-/* Вітання і замовлення */
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+/* ==================== Контакти ==================== */
+/* ==================== Стилі шапки ====================*/
+
+/* ==================== Стилі головної сторінки ====================*/
+/* ==================== Вітання і замовлення ====================*/
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--primary-bg-color);
   text-align: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
   color: var(--main-light-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -139,7 +198,7 @@ header {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   cursor: pointer;
@@ -154,34 +213,60 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Наші переваги */
+/* ==================== Вітання і замовлення ====================*/
+/* ==================== Наші переваги ====================*/
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  width: 270px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .benefits-subtitle {
   margin-bottom: 10px;
 
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .benefits-text {
   color: var(--secondary-text-color);
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
-/* Чим ми займаємося */
+/* ==================== Наші переваги ====================*/
+/* ==================== Чим ми займаємося ====================*/
 
 .actings {
   padding-top: 0;
+}
+
+.actings-list {
+  display: flex;
+}
+
+.actings-item {
+  width: 370px;
+}
+
+.actings-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .title {
   margin-bottom: 50px;
 
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -190,10 +275,25 @@ header {
   display: block;
 }
 
-/* Наша кломанда */
+/* ==================== Чим ми займаємося ====================*/
+/* ==================== Наша кломанда ====================*/
 
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  padding-bottom: 30px;
+  width: 270px;
+  text-align: center;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-photo {
@@ -207,20 +307,25 @@ header {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
 }
 
 .team-prof {
   color: var(--secondary-text-color);
   font-size: 16px;
   letter-spacing: 0.03em;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
 }
 
-/* Підвал */
+/* ==================== Наша кломанда ====================*/
+/* ==================== Стилі головної сторінки ====================*/
+
+/* ==================== Підвал ====================*/
 
 .foot {
   background-color: var(--primary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-foot {
@@ -237,7 +342,7 @@ header {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
 }
 
 .location-address:hover,
@@ -251,7 +356,7 @@ header {
   color: var(--thirdy-text-color);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
@@ -259,13 +364,15 @@ header {
   margin-bottom: 9px;
 }
 
-/* Портфоліо */
+/* ==================== Підвал ====================*/
 
+/* ==================== Портфоліо ====================*/
+/* ==================== Кноки ====================*/
 .button {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: calc(26 / 14);
   border-radius: 4px;
   background-color: var(--secondary-bg-color);
   cursor: pointer;
@@ -287,8 +394,38 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* ==================== Кноки ====================*/
+/* ==================== Картки ====================*/
+
+.kind-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.kind-item {
+  width: 370px;
+  margin: 15px;
+}
+
+.kind-card {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
 .kind-photo {
-  margin-bottom: 20px;
   display: block;
 }
 
@@ -296,13 +433,16 @@ header {
   margin-bottom: 4px;
 
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 
 .kind-text {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.87;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
 }
+
+/* ==================== Картки ====================*/
+/* ==================== Портфоліо ====================*/

@@ -20,24 +20,30 @@
   <body>
     <!-- Шапка -->
     <header>
-      <div class="container">
-        <a class="logo link" href="./index.html" lang="en"
-          >Web<span class="logo-main">Studio</span>
-        </a>
-        <nav>
+      <div class="container main-head">
+        <nav class="main-nav">
+          <a class="logo-main logo link" href="./index.html" lang="en"
+            >Web<span class="logo-head">Studio</span></a
+          >
           <ul class="list site-nav">
-            <li><a class="link site-nav-link" href="./index.html">Студія</a></li>
-            <li><a class="link site-nav-link current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link site-nav-link" href="#">Контакти</a></li>
+            <li class="site-nav-item">
+              <a class="link site-nav-link" href="./index.html">Студія</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="link site-nav-link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="site-nav-item"><a class="link site-nav-link" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="list contacts">
-          <li>
+          <li class="contacts-item">
             <a class="contacts-link link" href="mailto:info@devstudio.com" lang="en"
               >info@devstudio.com</a
             >
           </li>
-          <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contacts-item">
+            <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -47,15 +53,17 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list">
-            <li><button class="button button-first" type="button">Усі</button></li>
-            <li><button class="button" type="button">Веб-сайти</button></li>
-            <li><button class="button" type="button">Додатки</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
+          <ul class="list button-list">
+            <li class="button-item">
+              <button class="button button-first" type="button">Усі</button>
+            </li>
+            <li class="button-item"><button class="button" type="button">Веб-сайти</button></li>
+            <li class="button-item"><button class="button" type="button">Додатки</button></li>
+            <li class="button-item"><button class="button" type="button">Дизайн</button></li>
+            <li class="button-item"><button class="button" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="list">
-            <li>
+          <ul class="list kind-list">
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post1.jpg"
@@ -63,10 +71,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Технокряк</h2>
-              <p class="kind-text">Веб-сайт</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Технокряк</h2>
+                <p class="kind-text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post2.jpg"
@@ -74,10 +84,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-              <p class="kind-text">Дизайн</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="kind-text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post3.jpg"
@@ -85,10 +97,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="kind-text">Додаток</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="kind-text">Додаток</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post4.jpg"
@@ -96,10 +110,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Проєкт <span lang="en">Prime</span></h2>
-              <p class="kind-text">Маркетинг</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Проєкт <span lang="en">Prime</span></h2>
+                <p class="kind-text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post5.jpg"
@@ -107,10 +123,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Проєкт <span lang="en">Boxes</span></h2>
-              <p class="kind-text">Додаток</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="kind-text">Додаток</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post6.jpg"
@@ -118,10 +136,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title" lang="en">Inspiration has no Borders</h2>
-              <p class="kind-text">Веб-сайт</p>
+              <div class="kind-card">
+                <h2 class="kind-title" lang="en">Inspiration has no Borders</h2>
+                <p class="kind-text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post7.jpg"
@@ -129,10 +149,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Видання <span lang="en">Limited Edition</span></h2>
-              <p class="kind-text">Дизайн</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="kind-text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post8.jpg"
@@ -140,10 +162,12 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title">Проєкт <span lang="en">LAB</span></h2>
-              <p class="kind-text">Маркетинг</p>
+              <div class="kind-card">
+                <h2 class="kind-title">Проєкт <span lang="en">LAB</span></h2>
+                <p class="kind-text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="kind-item">
               <img
                 class="kind-photo"
                 src="./images/post9.jpg"
@@ -151,8 +175,10 @@
                 width="370"
                 height="294"
               />
-              <h2 class="kind-title" lang="en">Growing Business</h2>
-              <p class="kind-text">Додаток</p>
+              <div class="kind-card">
+                <h2 class="kind-title" lang="en">Growing Business</h2>
+                <p class="kind-text">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
