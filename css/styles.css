@@ -385,10 +385,6 @@ header {
   letter-spacing: 0.03em;
 }
 
-.button-first {
-  padding: 6px 25px;
-}
-
 .button:hover,
 .button:focus,
 .button:active {
