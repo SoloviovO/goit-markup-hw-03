@@ -182,13 +182,11 @@ header {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 
   color: var(--main-light-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -287,7 +285,6 @@ header {
 }
 
 .team-item {
-  padding-bottom: 30px;
   width: 270px;
   text-align: center;
   background-color: var(--main-light-color);
@@ -301,8 +298,11 @@ header {
 }
 
 .team-photo {
-  margin-bottom: 30px;
   display: block;
+}
+
+.team-data {
+  padding: 30px;
 }
 
 .team-member {
